@@ -15,16 +15,22 @@ int main(int argc, char* argv[])
     app.add_option("-j,--host", host, "Host address");
     int port = 4223;
     app.add_option("-p,--port", port, "Port address");
-    std::string uid = "XYZ";
+    std::string uid;
     app.add_option("uid", uid, "Device UID");
 
     CLI11_PARSE(app, argc, argv);
-    std::cout << fmt::format("Connecting to device '{uid}' at {host}:{port}",
-                             fmt::arg("uid", uid), fmt::arg("host", host), fmt::arg("port", port))
-                             << std::endl;
-    Connection connection{host, port, uid};
-    FlappyFrog game{connection};
-    game.connect();
-    game.loop();
+
+    FlappyFrog* game;
+    if (!uid.empty()) {
+        std::cout << fmt::format("Connecting to device '{uid}' at {host}:{port}",
+                                 fmt::arg("uid", uid), fmt::arg("host", host), fmt::arg("port", port))
+                                 << std::endl;
+        Connection connection{host, port, uid};
+        game = new FlappyFrog(connection);
+    } else {
+        game = new FlappyFrog();
+    }
+    game->connect();
+    game->loop();
     return 0;
 }

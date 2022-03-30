@@ -4,6 +4,7 @@
 #include <iostream>
 #include <cmath>
 #include <memory>
+#include <string>
 
 #include "fmt/core.h"
 #include "SDL.h"
@@ -32,9 +33,7 @@ float remap(float value, float in_min, float in_max, float out_min, float out_ma
     return result;
 }
 
-
-FlappyFrog::FlappyFrog(Connection conn) :
-    connection{conn} {
+FlappyFrog::FlappyFrog() {
     // creation of a b2World object. b2World is the physics hub that manages memory, objects, 
     // and simulation. You can allocate the physics world on the stack, heap, or data section.
     b2Vec2 gravity(0.0f, -10.0f);
@@ -45,6 +44,12 @@ FlappyFrog::FlappyFrog(Connection conn) :
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(5.0, 10.0);
     body = world->CreateBody(&bodyDef);
+}
+
+
+FlappyFrog::FlappyFrog(Connection conn) :
+    FlappyFrog() {
+        connection = conn;
 }
 
 const b2Vec2& FlappyFrog::screen2world(const b2Vec2& screen_point) {
@@ -62,22 +67,26 @@ const b2Vec2& FlappyFrog::world2screen(const b2Vec2& world_point) {
 }
 
 int FlappyFrog::connect() {
-    ipcon_create(&ipcon);
-    rgb_led_button_create(&rlb, connection.uid.c_str(), &ipcon);
+    std::cout << fmt::format("Connection {host}:{port}({uid})",
+        fmt::arg("uid", connection.uid), fmt::arg("host", connection.host), fmt::arg("port", connection.port)) << std::endl;
+    if (connection) {
+        ipcon_create(&ipcon);
+        rgb_led_button_create(&rlb, connection.uid.c_str(), &ipcon);
 
-    // Connect to brickd
-    if(ipcon_connect(&ipcon, connection.host.c_str(), connection.port) < 0) {
-        std::cout << "Could not connect" << std::endl;
-        return 1;
+        // Connect to brickd
+        if(ipcon_connect(&ipcon, connection.host.c_str(), connection.port) < 0) {
+            std::cout << "Could not connect" << std::endl;
+            return 1;
+        }
+        // Don't use device before ipcon is connected
+        std::cout << "Connected!" << std::endl;
+
+        // Register button state changed callback to function cb_button_state_changed
+        rgb_led_button_register_callback(&rlb,
+                                        RGB_LED_BUTTON_CALLBACK_BUTTON_STATE_CHANGED,
+                                        (void (*)(void))cb_button_state_changed,
+                                        body);
     }
-    // Don't use device before ipcon is connected
-    std::cout << "Connected!" << std::endl;
-
-    // Register button state changed callback to function cb_button_state_changed
-    rgb_led_button_register_callback(&rlb,
-                                     RGB_LED_BUTTON_CALLBACK_BUTTON_STATE_CHANGED,
-                                     (void (*)(void))cb_button_state_changed,
-                                     body);
     return 0;
 }
 
@@ -131,11 +140,13 @@ int FlappyFrog::loop() {
         SDL_SetRenderDrawColor( renderer, 0, 0, 0, 0 );
         SDL_RenderClear( renderer );
 
-        //Set button color
         std::cout << fmt::format("Body position Y coordinate: {pos}", fmt::arg("pos", screen_position.y)) << std::endl;
         float color = remap(screen_position.y, 400, 0, 0, 255);
         std::cout << fmt::format("Button color G value: {col}", fmt::arg("col", color)) << std::endl;
-        rgb_led_button_set_color(&rlb, 200, color, 0);
+
+        //Set button color
+        if (connection)
+            rgb_led_button_set_color(&rlb, 200, color, 0);
 
         //Render filled quad
         SDL_Rect fillRect = { static_cast<int>(screen_position.x), 
@@ -158,6 +169,8 @@ int FlappyFrog::loop() {
 
 
 FlappyFrog::~FlappyFrog() {
-    rgb_led_button_destroy(&rlb);
-    ipcon_destroy(&ipcon);
+    if (connection) {
+        rgb_led_button_destroy(&rlb);
+        ipcon_destroy(&ipcon);
+    }
 }

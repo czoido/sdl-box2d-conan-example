@@ -4,10 +4,18 @@
 #include "ip_connection.h"
 #include "bricklet_rgb_led_button.h"
 
-struct Connection {
-    std::string host;
-    int port;
-    std::string uid;
+class Connection {
+    public:
+        std::string host;
+        int port;
+        std::string uid;
+
+        Connection() = default;
+        ~Connection() = default;
+
+        operator bool() const {
+            return !host.empty() && !uid.empty();
+        };
 };
 
 class FlappyFrog {
@@ -27,7 +35,11 @@ class FlappyFrog {
         RGBLEDButton rlb;
     public:
         FlappyFrog(const Connection);
+        FlappyFrog();
         int connect();
         int loop();
         ~FlappyFrog();
+
+        FlappyFrog(const FlappyFrog&) = default;
+        FlappyFrog& operator=(const FlappyFrog&) = default;
 };
