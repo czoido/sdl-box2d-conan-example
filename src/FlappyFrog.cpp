@@ -138,7 +138,9 @@ int FlappyFrog::loop() {
         rgb_led_button_set_color(&rlb, 200, color, 0);
 
         //Render filled quad
-        SDL_Rect fillRect = { screen_position.x, screen_position.y, SCREEN_WIDTH/20, SCREEN_WIDTH/20 };
+        SDL_Rect fillRect = { static_cast<int>(screen_position.x), 
+                              static_cast<int>(screen_position.y), 
+                              SCREEN_WIDTH/20, SCREEN_WIDTH/20 };
         SDL_SetRenderDrawColor(renderer, 200, color, 0, 255);
         SDL_RenderFillRect( renderer, &fillRect );
 

@@ -20,8 +20,8 @@ class FlappyFrog {
         b2World* world;
         b2Body* body;
 
-        const b2Vec2& FlappyFrog::screen2world(const b2Vec2&);
-        const b2Vec2& FlappyFrog::world2screen(const b2Vec2&);
+        const b2Vec2& screen2world(const b2Vec2&);
+        const b2Vec2& world2screen(const b2Vec2&);
 
         IPConnection ipcon;
         RGBLEDButton rlb;
