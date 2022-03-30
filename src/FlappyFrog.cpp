@@ -100,6 +100,15 @@ int FlappyFrog::loop() {
 
     SDL_Event event;
 
+    // Create the ground body
+    b2BodyDef groundBodyDef;
+    b2Vec2 world_position = screen2world(b2Vec2(0, SCREEN_HEIGHT));
+    groundBodyDef.position.Set(world_position.x, world_position.y);
+    b2Body* groundBody = world->CreateBody(&groundBodyDef);
+    b2PolygonShape groundBox;
+    groundBox.SetAsBox(50.0f, 1.0f);
+    groundBody->CreateFixture(&groundBox, 0.0f);
+
     // create and attach a polygon shape using a fixture definition. First we create a box shape:
     b2PolygonShape dynamicBox;
     dynamicBox.SetAsBox(0.1f, 0.1f);
@@ -130,7 +139,7 @@ int FlappyFrog::loop() {
             }
             else if (event.key.keysym.sym == SDLK_UP)
             {
-                body->ApplyForce(b2Vec2(0,300.0), body->GetPosition(), true);
+                body->ApplyForce(b2Vec2(0,100.0), body->GetPosition(), true);
             }
         }
         world->Step(elapsedTime, velocityIterations, positionIterations);
@@ -169,6 +178,7 @@ int FlappyFrog::loop() {
 
 
 FlappyFrog::~FlappyFrog() {
+    delete world;
     if (connection) {
         rgb_led_button_destroy(&rlb);
         ipcon_destroy(&ipcon);
