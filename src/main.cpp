@@ -25,7 +25,7 @@ const b2Vec2& world2screen(const b2Vec2& world_point) {
   return screen_point;
 }
 
-int main()
+int main(int argc, char* argv[])
 {
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_DisplayMode DM;
