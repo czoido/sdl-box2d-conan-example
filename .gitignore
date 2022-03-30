@@ -4,3 +4,4 @@ test_package/conanbuildinfo.txt
 test_package/conaninfo.txt
 test_package/graph_info.json
 test_package/build-release/*
+build/
