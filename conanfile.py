@@ -35,4 +35,4 @@ class MygameConan(ConanFile):
 
     def package(self):
         copy(self, "mygame*", self.build_folder, os.path.join(self.package_folder, "bin"), keep_path=False)
-        copy(self, "assets/image.png", self.source_folder, os.path.join(self.package_folder, "bin"), keep_path=False)
+        copy(self, "assets/frog.png", self.source_folder, os.path.join(self.package_folder, "bin"), keep_path=False)
