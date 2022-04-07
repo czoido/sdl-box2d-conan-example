@@ -1,7 +1,8 @@
 import os
 
 from conan import ConanFile
-from conan.tools.cmake import CMake, cmake_layout
+from conan.tools.cmake import CMakeToolchain, CMakeDeps, CMake, cmake_layout
+from conan.tools.apple import XcodeDeps, XcodeToolchain
 from conan.tools.files import copy
 
 
@@ -15,7 +16,20 @@ class MygameConan(ConanFile):
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*", "include/*", "assets/*"
 
-    generators = "CMakeDeps", "CMakeToolchain"
+    options = {"xcode_ide": [True, False]}
+    default_options = {"xcode_ide": False}
+
+    def generate(self):
+        if not self.options.xcode_ide:
+            tc = CMakeToolchain(self)
+            tc.generate()        
+            deps = CMakeDeps(self)
+            deps.generate()
+        else:
+            tc = XcodeToolchain(self)
+            tc.generate()        
+            deps = XcodeDeps(self)
+            deps.generate()
 
     def requirements(self):
         self.requires("sdl/2.0.20")
@@ -26,13 +40,19 @@ class MygameConan(ConanFile):
         self.requires("tinkerforge-bindings/2.1.32")
 
     def layout(self):
-        cmake_layout(self)
+        if not self.options.xcode_ide:
+            cmake_layout(self)
+        else:
+            self.folders.build = "build"
+            self.folders.generators = "conan"
 
     def build(self):
-        cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
+        if not self.options.xcode_ide:
+            cmake = CMake(self)
+            cmake.configure()
+            cmake.build()
 
     def package(self):
-        copy(self, "mygame*", self.build_folder, os.path.join(self.package_folder, "bin"), keep_path=False)
-        copy(self, "assets/frog.png", self.source_folder, os.path.join(self.package_folder, "bin"), keep_path=False)
+        if not self.options.xcode_ide:
+            copy(self, "mygame*", self.build_folder, os.path.join(self.package_folder, "bin"), keep_path=False)
+            copy(self, "assets/frog.png", self.source_folder, os.path.join(self.package_folder, "bin"), keep_path=False)

@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		416ED60E27EDA62A00664526 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 416ED60D27EDA62A00664526 /* main.cpp */; };
+		41780B6627FEAA0C003323BE /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41780B6427FEAA0C003323BE /* World.cpp */; };
+		41780B6B27FF3662003323BE /* frog.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 41780B6A27FF3560003323BE /* frog.png */; };
+		41820B0F27F5F44F0053B8C2 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41820B0D27F5F44F0053B8C2 /* Game.cpp */; };
+		41820B1227F607C30053B8C2 /* Frog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41820B1027F607C30053B8C2 /* Frog.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		416ED60827EDA62A00664526 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				41780B6B27FF3662003323BE /* frog.png in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		416ED60A27EDA62A00664526 /* GameExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		416ED60D27EDA62A00664526 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		416ED61F27EDA83F00664526 /* conan_zstd_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zstd_release_x86_64.xcconfig; path = conan/conan_zstd_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62027EDA83F00664526 /* conan_libwebp_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libwebp_vars_debug_x86_64.xcconfig; path = conan/conan_libwebp_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62127EDA83F00664526 /* conan_sdl_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_vars_debug_x86_64.xcconfig; path = conan/conan_sdl_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62227EDA83F00664526 /* conan_libiconv_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libiconv_debug_x86_64.xcconfig; path = conan/conan_libiconv_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62327EDA83F00664526 /* conan_jbig_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_jbig_release_x86_64.xcconfig; path = conan/conan_jbig_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62427EDA83F00664526 /* conan_box2d.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_box2d.xcconfig; path = conan/conan_box2d.xcconfig; sourceTree = "<group>"; };
+		416ED62527EDA83F00664526 /* conan_libtiff_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libtiff_release_x86_64.xcconfig; path = conan/conan_libtiff_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62627EDA83F00664526 /* conan_libdeflate_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libdeflate_vars_debug_x86_64.xcconfig; path = conan/conan_libdeflate_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62727EDA83F00664526 /* conan_libpng_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libpng_debug_x86_64.xcconfig; path = conan/conan_libpng_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62827EDA83F00664526 /* conan_sdl_image_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_image_release_x86_64.xcconfig; path = conan/conan_sdl_image_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62927EDA83F00664526 /* conan_sdl_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_vars_release_x86_64.xcconfig; path = conan/conan_sdl_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62A27EDA83F00664526 /* conan_libdeflate_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libdeflate_debug_x86_64.xcconfig; path = conan/conan_libdeflate_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62B27EDA83F00664526 /* conan_xz_utils_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_xz_utils_vars_debug_x86_64.xcconfig; path = conan/conan_xz_utils_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62C27EDA83F00664526 /* conan_libjpeg.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libjpeg.xcconfig; path = conan/conan_libjpeg.xcconfig; sourceTree = "<group>"; };
+		416ED62D27EDA83F00664526 /* conan_sdl_image_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_image_debug_x86_64.xcconfig; path = conan/conan_sdl_image_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62E27EDA83F00664526 /* conan_jbig_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_jbig_vars_debug_x86_64.xcconfig; path = conan/conan_jbig_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED62F27EDA83F00664526 /* conan_zlib_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zlib_vars_release_x86_64.xcconfig; path = conan/conan_zlib_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63027EDA83F00664526 /* conan_sdl_image_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_image_vars_debug_x86_64.xcconfig; path = conan/conan_sdl_image_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63127EDA83F00664526 /* conan_libiconv_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libiconv_release_x86_64.xcconfig; path = conan/conan_libiconv_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63227EDA83F00664526 /* conan_libwebp_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libwebp_debug_x86_64.xcconfig; path = conan/conan_libwebp_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63327EDA83F00664526 /* conan_zlib_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zlib_debug_x86_64.xcconfig; path = conan/conan_zlib_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63427EDA83F00664526 /* conan_zlib.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zlib.xcconfig; path = conan/conan_zlib.xcconfig; sourceTree = "<group>"; };
+		416ED63527EDA83F00664526 /* conan_libjpeg_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libjpeg_debug_x86_64.xcconfig; path = conan/conan_libjpeg_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63627EDA83F00664526 /* conan_libiconv_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libiconv_vars_release_x86_64.xcconfig; path = conan/conan_libiconv_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63727EDA83F00664526 /* conan_zlib_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zlib_vars_debug_x86_64.xcconfig; path = conan/conan_zlib_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63827EDA83F00664526 /* conan_zstd_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zstd_debug_x86_64.xcconfig; path = conan/conan_zstd_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63927EDA83F00664526 /* conandeps.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conandeps.xcconfig; path = conan/conandeps.xcconfig; sourceTree = "<group>"; };
+		416ED63A27EDA83F00664526 /* conan_xz_utils_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_xz_utils_debug_x86_64.xcconfig; path = conan/conan_xz_utils_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63B27EDA83F00664526 /* conan_zlib_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zlib_release_x86_64.xcconfig; path = conan/conan_zlib_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63C27EDA83F00664526 /* conan_jbig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_jbig.xcconfig; path = conan/conan_jbig.xcconfig; sourceTree = "<group>"; };
+		416ED63D27EDA83F00664526 /* conan_sdl_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_debug_x86_64.xcconfig; path = conan/conan_sdl_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63E27EDA83F00664526 /* conan_libwebp_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libwebp_vars_release_x86_64.xcconfig; path = conan/conan_libwebp_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED63F27EDA83F00664526 /* conan_zstd.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zstd.xcconfig; path = conan/conan_zstd.xcconfig; sourceTree = "<group>"; };
+		416ED64027EDA83F00664526 /* conan_libtiff_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libtiff_debug_x86_64.xcconfig; path = conan/conan_libtiff_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64127EDA83F00664526 /* conan_box2d_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_box2d_release_x86_64.xcconfig; path = conan/conan_box2d_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64227EDA83F00664526 /* conan_box2d_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_box2d_debug_x86_64.xcconfig; path = conan/conan_box2d_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64327EDA83F00664526 /* conan_zstd_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zstd_vars_release_x86_64.xcconfig; path = conan/conan_zstd_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64427EDA83F00664526 /* conan_libdeflate.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libdeflate.xcconfig; path = conan/conan_libdeflate.xcconfig; sourceTree = "<group>"; };
+		416ED64527EDA83F00664526 /* conan_libwebp_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libwebp_release_x86_64.xcconfig; path = conan/conan_libwebp_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64627EDA83F00664526 /* conan_libjpeg_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libjpeg_vars_debug_x86_64.xcconfig; path = conan/conan_libjpeg_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64727EDA83F00664526 /* conan_libpng_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libpng_release_x86_64.xcconfig; path = conan/conan_libpng_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64827EDA84000664526 /* conan_xz_utils_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_xz_utils_release_x86_64.xcconfig; path = conan/conan_xz_utils_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64927EDA84000664526 /* conantoolchain_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conantoolchain_release_x86_64.xcconfig; path = conan/conantoolchain_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64A27EDA84000664526 /* conan_zstd_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zstd_vars_debug_x86_64.xcconfig; path = conan/conan_zstd_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64B27EDA84000664526 /* conan_xz_utils.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_xz_utils.xcconfig; path = conan/conan_xz_utils.xcconfig; sourceTree = "<group>"; };
+		416ED64C27EDA84000664526 /* conantoolchain_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conantoolchain_debug_x86_64.xcconfig; path = conan/conantoolchain_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64D27EDA84000664526 /* conan_box2d_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_box2d_vars_release_x86_64.xcconfig; path = conan/conan_box2d_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64E27EDA84000664526 /* conan_libtiff_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libtiff_vars_release_x86_64.xcconfig; path = conan/conan_libtiff_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED64F27EDA84000664526 /* conan_libpng_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libpng_vars_release_x86_64.xcconfig; path = conan/conan_libpng_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65027EDA84000664526 /* conan_config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_config.xcconfig; path = conan/conan_config.xcconfig; sourceTree = "<group>"; };
+		416ED65127EDA84000664526 /* conan_sdl_image_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_image_vars_release_x86_64.xcconfig; path = conan/conan_sdl_image_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65227EDA84000664526 /* conan_libjpeg_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libjpeg_release_x86_64.xcconfig; path = conan/conan_libjpeg_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65327EDA84000664526 /* conan_sdl_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_release_x86_64.xcconfig; path = conan/conan_sdl_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65427EDA84000664526 /* conan_libwebp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libwebp.xcconfig; path = conan/conan_libwebp.xcconfig; sourceTree = "<group>"; };
+		416ED65527EDA84000664526 /* conan_libiconv_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libiconv_vars_debug_x86_64.xcconfig; path = conan/conan_libiconv_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65627EDA84000664526 /* conan_libdeflate_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libdeflate_vars_release_x86_64.xcconfig; path = conan/conan_libdeflate_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65727EDA84000664526 /* conan_libjpeg_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libjpeg_vars_release_x86_64.xcconfig; path = conan/conan_libjpeg_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65827EDA84000664526 /* conan_jbig_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_jbig_vars_release_x86_64.xcconfig; path = conan/conan_jbig_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65927EDA84000664526 /* conan_jbig_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_jbig_debug_x86_64.xcconfig; path = conan/conan_jbig_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65A27EDA84000664526 /* conan_libiconv.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libiconv.xcconfig; path = conan/conan_libiconv.xcconfig; sourceTree = "<group>"; };
+		416ED65B27EDA84000664526 /* conan_libdeflate_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libdeflate_release_x86_64.xcconfig; path = conan/conan_libdeflate_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65C27EDA84000664526 /* conan_libpng_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libpng_vars_debug_x86_64.xcconfig; path = conan/conan_libpng_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65D27EDA84000664526 /* conan_libtiff.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libtiff.xcconfig; path = conan/conan_libtiff.xcconfig; sourceTree = "<group>"; };
+		416ED65E27EDA84000664526 /* conan_box2d_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_box2d_vars_debug_x86_64.xcconfig; path = conan/conan_box2d_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED65F27EDA84000664526 /* conan_sdl_image.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_image.xcconfig; path = conan/conan_sdl_image.xcconfig; sourceTree = "<group>"; };
+		416ED66027EDA84000664526 /* conantoolchain.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conantoolchain.xcconfig; path = conan/conantoolchain.xcconfig; sourceTree = "<group>"; };
+		416ED66127EDA84000664526 /* conan_sdl.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl.xcconfig; path = conan/conan_sdl.xcconfig; sourceTree = "<group>"; };
+		416ED66227EDA84000664526 /* conan_libpng.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libpng.xcconfig; path = conan/conan_libpng.xcconfig; sourceTree = "<group>"; };
+		416ED66327EDA84000664526 /* conan_libtiff_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libtiff_vars_debug_x86_64.xcconfig; path = conan/conan_libtiff_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		416ED66427EDA84000664526 /* conan_xz_utils_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_xz_utils_vars_release_x86_64.xcconfig; path = conan/conan_xz_utils_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		41780B6427FEAA0C003323BE /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		41780B6527FEAA0C003323BE /* World.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
+		41780B6A27FF3560003323BE /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
+		41820B0C27F5F3590053B8C2 /* conanfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = conanfile.py; sourceTree = "<group>"; };
+		41820B0D27F5F44F0053B8C2 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		41820B0E27F5F44F0053B8C2 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		41820B1027F607C30053B8C2 /* Frog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Frog.cpp; sourceTree = "<group>"; };
+		41820B1127F607C30053B8C2 /* Frog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Frog.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		416ED60727EDA62A00664526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		416ED60127EDA62A00664526 = {
+			isa = PBXGroup;
+			children = (
+				41820B0C27F5F3590053B8C2 /* conanfile.py */,
+				41780B6E27FF4139003323BE /* assets */,
+				41780B6D27FF40EB003323BE /* include */,
+				41780B6C27FF40E0003323BE /* src */,
+				416ED61427EDA73100664526 /* conan */,
+				416ED60B27EDA62A00664526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		416ED60B27EDA62A00664526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				416ED60A27EDA62A00664526 /* GameExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		416ED61427EDA73100664526 /* conan */ = {
+			isa = PBXGroup;
+			children = (
+				416ED64227EDA83F00664526 /* conan_box2d_debug_x86_64.xcconfig */,
+				416ED64127EDA83F00664526 /* conan_box2d_release_x86_64.xcconfig */,
+				416ED65E27EDA84000664526 /* conan_box2d_vars_debug_x86_64.xcconfig */,
+				416ED64D27EDA84000664526 /* conan_box2d_vars_release_x86_64.xcconfig */,
+				416ED62427EDA83F00664526 /* conan_box2d.xcconfig */,
+				416ED65027EDA84000664526 /* conan_config.xcconfig */,
+				416ED65927EDA84000664526 /* conan_jbig_debug_x86_64.xcconfig */,
+				416ED62327EDA83F00664526 /* conan_jbig_release_x86_64.xcconfig */,
+				416ED62E27EDA83F00664526 /* conan_jbig_vars_debug_x86_64.xcconfig */,
+				416ED65827EDA84000664526 /* conan_jbig_vars_release_x86_64.xcconfig */,
+				416ED63C27EDA83F00664526 /* conan_jbig.xcconfig */,
+				416ED62A27EDA83F00664526 /* conan_libdeflate_debug_x86_64.xcconfig */,
+				416ED65B27EDA84000664526 /* conan_libdeflate_release_x86_64.xcconfig */,
+				416ED62627EDA83F00664526 /* conan_libdeflate_vars_debug_x86_64.xcconfig */,
+				416ED65627EDA84000664526 /* conan_libdeflate_vars_release_x86_64.xcconfig */,
+				416ED64427EDA83F00664526 /* conan_libdeflate.xcconfig */,
+				416ED62227EDA83F00664526 /* conan_libiconv_debug_x86_64.xcconfig */,
+				416ED63127EDA83F00664526 /* conan_libiconv_release_x86_64.xcconfig */,
+				416ED65527EDA84000664526 /* conan_libiconv_vars_debug_x86_64.xcconfig */,
+				416ED63627EDA83F00664526 /* conan_libiconv_vars_release_x86_64.xcconfig */,
+				416ED65A27EDA84000664526 /* conan_libiconv.xcconfig */,
+				416ED63527EDA83F00664526 /* conan_libjpeg_debug_x86_64.xcconfig */,
+				416ED65227EDA84000664526 /* conan_libjpeg_release_x86_64.xcconfig */,
+				416ED64627EDA83F00664526 /* conan_libjpeg_vars_debug_x86_64.xcconfig */,
+				416ED65727EDA84000664526 /* conan_libjpeg_vars_release_x86_64.xcconfig */,
+				416ED62C27EDA83F00664526 /* conan_libjpeg.xcconfig */,
+				416ED62727EDA83F00664526 /* conan_libpng_debug_x86_64.xcconfig */,
+				416ED64727EDA83F00664526 /* conan_libpng_release_x86_64.xcconfig */,
+				416ED65C27EDA84000664526 /* conan_libpng_vars_debug_x86_64.xcconfig */,
+				416ED64F27EDA84000664526 /* conan_libpng_vars_release_x86_64.xcconfig */,
+				416ED66227EDA84000664526 /* conan_libpng.xcconfig */,
+				416ED64027EDA83F00664526 /* conan_libtiff_debug_x86_64.xcconfig */,
+				416ED62527EDA83F00664526 /* conan_libtiff_release_x86_64.xcconfig */,
+				416ED66327EDA84000664526 /* conan_libtiff_vars_debug_x86_64.xcconfig */,
+				416ED64E27EDA84000664526 /* conan_libtiff_vars_release_x86_64.xcconfig */,
+				416ED65D27EDA84000664526 /* conan_libtiff.xcconfig */,
+				416ED63227EDA83F00664526 /* conan_libwebp_debug_x86_64.xcconfig */,
+				416ED64527EDA83F00664526 /* conan_libwebp_release_x86_64.xcconfig */,
+				416ED62027EDA83F00664526 /* conan_libwebp_vars_debug_x86_64.xcconfig */,
+				416ED63E27EDA83F00664526 /* conan_libwebp_vars_release_x86_64.xcconfig */,
+				416ED65427EDA84000664526 /* conan_libwebp.xcconfig */,
+				416ED63D27EDA83F00664526 /* conan_sdl_debug_x86_64.xcconfig */,
+				416ED62D27EDA83F00664526 /* conan_sdl_image_debug_x86_64.xcconfig */,
+				416ED62827EDA83F00664526 /* conan_sdl_image_release_x86_64.xcconfig */,
+				416ED63027EDA83F00664526 /* conan_sdl_image_vars_debug_x86_64.xcconfig */,
+				416ED65127EDA84000664526 /* conan_sdl_image_vars_release_x86_64.xcconfig */,
+				416ED65F27EDA84000664526 /* conan_sdl_image.xcconfig */,
+				416ED65327EDA84000664526 /* conan_sdl_release_x86_64.xcconfig */,
+				416ED62127EDA83F00664526 /* conan_sdl_vars_debug_x86_64.xcconfig */,
+				416ED62927EDA83F00664526 /* conan_sdl_vars_release_x86_64.xcconfig */,
+				416ED66127EDA84000664526 /* conan_sdl.xcconfig */,
+				416ED63A27EDA83F00664526 /* conan_xz_utils_debug_x86_64.xcconfig */,
+				416ED64827EDA84000664526 /* conan_xz_utils_release_x86_64.xcconfig */,
+				416ED62B27EDA83F00664526 /* conan_xz_utils_vars_debug_x86_64.xcconfig */,
+				416ED66427EDA84000664526 /* conan_xz_utils_vars_release_x86_64.xcconfig */,
+				416ED64B27EDA84000664526 /* conan_xz_utils.xcconfig */,
+				416ED63327EDA83F00664526 /* conan_zlib_debug_x86_64.xcconfig */,
+				416ED63B27EDA83F00664526 /* conan_zlib_release_x86_64.xcconfig */,
+				416ED63727EDA83F00664526 /* conan_zlib_vars_debug_x86_64.xcconfig */,
+				416ED62F27EDA83F00664526 /* conan_zlib_vars_release_x86_64.xcconfig */,
+				416ED63427EDA83F00664526 /* conan_zlib.xcconfig */,
+				416ED63827EDA83F00664526 /* conan_zstd_debug_x86_64.xcconfig */,
+				416ED61F27EDA83F00664526 /* conan_zstd_release_x86_64.xcconfig */,
+				416ED64A27EDA84000664526 /* conan_zstd_vars_debug_x86_64.xcconfig */,
+				416ED64327EDA83F00664526 /* conan_zstd_vars_release_x86_64.xcconfig */,
+				416ED63F27EDA83F00664526 /* conan_zstd.xcconfig */,
+				416ED63927EDA83F00664526 /* conandeps.xcconfig */,
+				416ED64C27EDA84000664526 /* conantoolchain_debug_x86_64.xcconfig */,
+				416ED64927EDA84000664526 /* conantoolchain_release_x86_64.xcconfig */,
+				416ED66027EDA84000664526 /* conantoolchain.xcconfig */,
+			);
+			name = conan;
+			sourceTree = "<group>";
+		};
+		41780B6C27FF40E0003323BE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				416ED60D27EDA62A00664526 /* main.cpp */,
+				41820B0D27F5F44F0053B8C2 /* Game.cpp */,
+				41820B1027F607C30053B8C2 /* Frog.cpp */,
+				41780B6427FEAA0C003323BE /* World.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		41780B6D27FF40EB003323BE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				41820B0E27F5F44F0053B8C2 /* Game.hpp */,
+				41820B1127F607C30053B8C2 /* Frog.hpp */,
+				41780B6527FEAA0C003323BE /* World.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		41780B6E27FF4139003323BE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				41780B6A27FF3560003323BE /* frog.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		416ED60927EDA62A00664526 /* GameExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416ED61127EDA62A00664526 /* Build configuration list for PBXNativeTarget "GameExample" */;
+			buildPhases = (
+				416ED60627EDA62A00664526 /* Sources */,
+				416ED60727EDA62A00664526 /* Frameworks */,
+				416ED60827EDA62A00664526 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameExample;
+			productName = GameExample;
+			productReference = 416ED60A27EDA62A00664526 /* GameExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		416ED60227EDA62A00664526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					416ED60927EDA62A00664526 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 416ED60527EDA62A00664526 /* Build configuration list for PBXProject "GameExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 416ED60127EDA62A00664526;
+			productRefGroup = 416ED60B27EDA62A00664526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				416ED60927EDA62A00664526 /* GameExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		416ED60627EDA62A00664526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41820B1227F607C30053B8C2 /* Frog.cpp in Sources */,
+				416ED60E27EDA62A00664526 /* main.cpp in Sources */,
+				41780B6627FEAA0C003323BE /* World.cpp in Sources */,
+				41820B0F27F5F44F0053B8C2 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		416ED60F27EDA62A00664526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416ED65027EDA84000664526 /* conan_config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		416ED61027EDA62A00664526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416ED65027EDA84000664526 /* conan_config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		416ED61227EDA62A00664526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		416ED61327EDA62A00664526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		416ED60527EDA62A00664526 /* Build configuration list for PBXProject "GameExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416ED60F27EDA62A00664526 /* Debug */,
+				416ED61027EDA62A00664526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416ED61127EDA62A00664526 /* Build configuration list for PBXNativeTarget "GameExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416ED61227EDA62A00664526 /* Debug */,
+				416ED61327EDA62A00664526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 416ED60227EDA62A00664526 /* Project object */;
+}
