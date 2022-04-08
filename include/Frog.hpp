@@ -2,6 +2,7 @@
 #define Frog_hpp
 
 #include <memory>
+#include <string>
 #include <stdio.h>
 #include <box2d/box2d.h>
 #include <SDL.h>
