@@ -8,7 +8,7 @@
 #include <fmt/core.h>
 #include <SDL.h>
 #include <SDL_image.h>
-
+#include <SDL_mixer.h>
 
 // Callback function for button state changed callback
 void cb_button_state_changed(uint8_t state, void* user_data) {
@@ -83,8 +83,19 @@ int Game::loop() {
                                           SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-
+    
     SDL_Event event;
+
+    if(Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096) == -1) {
+        std::cout << SDL_GetError() << std::endl;
+        return 0;
+    }
+    
+    Mix_Chunk *jumpSound = Mix_LoadWAV("jump.wav");
+    if(!jumpSound) {
+        std::cout << SDL_GetError() << std::endl;
+        return 0;
+    }
 
 
     bool quit = false;
@@ -100,6 +111,11 @@ int Game::loop() {
             else if (event.key.keysym.sym == SDLK_UP)
             {
                 frog->impulse();
+                if(Mix_PlayChannel(-1, jumpSound, 0) == -1) {
+                    std::cout << SDL_GetError() << std::endl;
+                    Mix_FreeChunk(jumpSound);
+                    return 0;
+                }
             }
         }
 
@@ -108,9 +124,9 @@ int Game::loop() {
         SDL_RenderClear( renderer );
 
         b2Vec2 frog_screen_position = world2screen(frog->getPosition());
-        std::cout << fmt::format("Body position Y coordinate: {pos}", fmt::arg("pos", frog_screen_position.y)) << std::endl;
+        //std::cout << fmt::format("Body position Y coordinate: {pos}", fmt::arg("pos", frog_screen_position.y)) << std::endl;
         float color = remap(frog_screen_position.y, 400, 0, 0, 255);
-        std::cout << fmt::format("Button color G value: {col}", fmt::arg("col", color)) << std::endl;
+        //std::cout << fmt::format("Button color G value: {col}", fmt::arg("col", color)) << std::endl;
 
         //Set button color
         if (connection)
@@ -123,8 +139,10 @@ int Game::loop() {
         elapsedTime = (currTime - startTime) / 1000.0; // Convert to seconds.
         world.update(elapsedTime);
     }
+    Mix_FreeChunk(jumpSound);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
+    Mix_CloseAudio();
     SDL_Quit();
     return EXIT_SUCCESS;
 }

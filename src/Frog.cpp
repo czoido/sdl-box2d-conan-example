@@ -33,7 +33,7 @@ Frog::Frog(const b2Vec2& position, const World& world)
     b2Vec2 b = Game::world2screen(b2Vec2(0,0));
     b2Vec2 dim = b - a;
     frog_dimensions_world = b2Vec2(dim.x, dim.y);
-    
+
 }
 
 void Frog::impulse() {

@@ -16,6 +16,7 @@ public:
     Frog(const b2Vec2& position, const World& world);
     Frog(const Frog&);
     Frog& operator=(const Frog&);
+    ~Frog() = default;
     void update(float delta);
     void impulse();
     b2Vec2 getPosition() const {return _body->GetPosition();};

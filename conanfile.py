@@ -38,6 +38,7 @@ class MygameConan(ConanFile):
         self.requires("cli11/2.1.2")
         self.requires("fmt/8.1.1")
         self.requires("tinkerforge-bindings/2.1.32")
+        self.requires("sdl_mixer/2.0.4")
 
     def layout(self):
         if not self.options.xcode_ide:

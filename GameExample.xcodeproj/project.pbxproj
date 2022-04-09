@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41646EB22800A3AB00E68FBD /* jump.wav in Copy Files */ = {isa = PBXBuildFile; fileRef = 41646EB12800A39D00E68FBD /* jump.wav */; };
 		416ED60E27EDA62A00664526 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 416ED60D27EDA62A00664526 /* main.cpp */; };
 		41780B6627FEAA0C003323BE /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41780B6427FEAA0C003323BE /* World.cpp */; };
 		41780B6B27FF3662003323BE /* frog.png in Copy Files */ = {isa = PBXBuildFile; fileRef = 41780B6A27FF3560003323BE /* frog.png */; };
@@ -21,6 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				41646EB22800A3AB00E68FBD /* jump.wav in Copy Files */,
 				41780B6B27FF3662003323BE /* frog.png in Copy Files */,
 			);
 			name = "Copy Files";
@@ -29,6 +31,77 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4105BA8E2801544300CC395D /* conan_opusfile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opusfile.xcconfig; path = conan/conan_opusfile.xcconfig; sourceTree = "<group>"; };
+		4105BA8F2801544300CC395D /* conan_fmt_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_fmt_debug_x86_64.xcconfig; path = conan/conan_fmt_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA902801544300CC395D /* conan_cli11.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_cli11.xcconfig; path = conan/conan_cli11.xcconfig; sourceTree = "<group>"; };
+		4105BA912801544300CC395D /* conan_ogg_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_ogg_release_x86_64.xcconfig; path = conan/conan_ogg_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA922801544300CC395D /* conan_vorbis_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_vorbis_vars_release_x86_64.xcconfig; path = conan/conan_vorbis_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA932801544300CC395D /* conan_flac_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_flac_debug_x86_64.xcconfig; path = conan/conan_flac_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA942801544300CC395D /* conan_tinkerforge_bindings_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_tinkerforge_bindings_release_x86_64.xcconfig; path = conan/conan_tinkerforge_bindings_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA952801544300CC395D /* conan_libmikmod_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmikmod_vars_debug_x86_64.xcconfig; path = conan/conan_libmikmod_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA962801544300CC395D /* conan_openssl_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_openssl_vars_release_x86_64.xcconfig; path = conan/conan_openssl_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA972801544300CC395D /* conan_flac_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_flac_vars_debug_x86_64.xcconfig; path = conan/conan_flac_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA982801544300CC395D /* conan_fmt_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_fmt_vars_release_x86_64.xcconfig; path = conan/conan_fmt_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA992801544300CC395D /* conan_openssl.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_openssl.xcconfig; path = conan/conan_openssl.xcconfig; sourceTree = "<group>"; };
+		4105BA9A2801544300CC395D /* conan_openssl_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_openssl_release_x86_64.xcconfig; path = conan/conan_openssl_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA9B2801544300CC395D /* conan_libmodplug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmodplug.xcconfig; path = conan/conan_libmodplug.xcconfig; sourceTree = "<group>"; };
+		4105BA9C2801544300CC395D /* conan_vorbis_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_vorbis_debug_x86_64.xcconfig; path = conan/conan_vorbis_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA9D2801544300CC395D /* conan_sdl_mixer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_mixer.xcconfig; path = conan/conan_sdl_mixer.xcconfig; sourceTree = "<group>"; };
+		4105BA9E2801544300CC395D /* conan_opus_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opus_debug_x86_64.xcconfig; path = conan/conan_opus_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BA9F2801544300CC395D /* conan_opus_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opus_vars_release_x86_64.xcconfig; path = conan/conan_opus_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA02801544300CC395D /* conan_fmt_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_fmt_vars_debug_x86_64.xcconfig; path = conan/conan_fmt_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA12801544300CC395D /* conan_mpg123_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_mpg123_vars_release_x86_64.xcconfig; path = conan/conan_mpg123_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA22801544300CC395D /* conan_libmad_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmad_debug_x86_64.xcconfig; path = conan/conan_libmad_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA32801544300CC395D /* conan_mpg123_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_mpg123_release_x86_64.xcconfig; path = conan/conan_mpg123_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA42801544300CC395D /* conan_tinkerforge_bindings_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_tinkerforge_bindings_vars_debug_x86_64.xcconfig; path = conan/conan_tinkerforge_bindings_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA52801544300CC395D /* conan_opus_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opus_vars_debug_x86_64.xcconfig; path = conan/conan_opus_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA62801544300CC395D /* conan_flac_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_flac_release_x86_64.xcconfig; path = conan/conan_flac_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA72801544300CC395D /* conan_opus.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opus.xcconfig; path = conan/conan_opus.xcconfig; sourceTree = "<group>"; };
+		4105BAA82801544300CC395D /* conan_sdl_mixer_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_mixer_debug_x86_64.xcconfig; path = conan/conan_sdl_mixer_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAA92801544300CC395D /* conan_mpg123_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_mpg123_vars_debug_x86_64.xcconfig; path = conan/conan_mpg123_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAAA2801544400CC395D /* conan_libmad.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmad.xcconfig; path = conan/conan_libmad.xcconfig; sourceTree = "<group>"; };
+		4105BAAB2801544400CC395D /* conan_openssl_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_openssl_vars_debug_x86_64.xcconfig; path = conan/conan_openssl_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAAC2801544400CC395D /* conan_mpg123.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_mpg123.xcconfig; path = conan/conan_mpg123.xcconfig; sourceTree = "<group>"; };
+		4105BAAD2801544400CC395D /* conan_sdl_mixer_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_mixer_vars_release_x86_64.xcconfig; path = conan/conan_sdl_mixer_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAAE2801544400CC395D /* conan_ogg_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_ogg_vars_release_x86_64.xcconfig; path = conan/conan_ogg_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAAF2801544400CC395D /* conan_cli11_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_cli11_release_x86_64.xcconfig; path = conan/conan_cli11_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB02801544400CC395D /* conan_opus_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opus_release_x86_64.xcconfig; path = conan/conan_opus_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB12801544400CC395D /* conan_libmikmod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmikmod.xcconfig; path = conan/conan_libmikmod.xcconfig; sourceTree = "<group>"; };
+		4105BAB22801544400CC395D /* conan_vorbis.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_vorbis.xcconfig; path = conan/conan_vorbis.xcconfig; sourceTree = "<group>"; };
+		4105BAB32801544400CC395D /* conan_cli11_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_cli11_vars_release_x86_64.xcconfig; path = conan/conan_cli11_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB42801544400CC395D /* conan_libmodplug_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmodplug_debug_x86_64.xcconfig; path = conan/conan_libmodplug_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB52801544400CC395D /* conan_libmad_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmad_vars_debug_x86_64.xcconfig; path = conan/conan_libmad_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB62801544400CC395D /* conan_flac_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_flac_vars_release_x86_64.xcconfig; path = conan/conan_flac_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB72801544400CC395D /* conan_libmodplug_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmodplug_vars_debug_x86_64.xcconfig; path = conan/conan_libmodplug_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB82801544400CC395D /* conan_mpg123_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_mpg123_debug_x86_64.xcconfig; path = conan/conan_mpg123_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAB92801544400CC395D /* conan_libmad_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmad_release_x86_64.xcconfig; path = conan/conan_libmad_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BABA2801544400CC395D /* conan_libmodplug_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmodplug_vars_release_x86_64.xcconfig; path = conan/conan_libmodplug_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BABB2801544400CC395D /* conan_libmikmod_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmikmod_vars_release_x86_64.xcconfig; path = conan/conan_libmikmod_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BABC2801544400CC395D /* conan_ogg.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_ogg.xcconfig; path = conan/conan_ogg.xcconfig; sourceTree = "<group>"; };
+		4105BABD2801544400CC395D /* conan_openssl_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_openssl_debug_x86_64.xcconfig; path = conan/conan_openssl_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BABE2801544400CC395D /* conan_libmodplug_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmodplug_release_x86_64.xcconfig; path = conan/conan_libmodplug_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BABF2801544400CC395D /* conan_ogg_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_ogg_debug_x86_64.xcconfig; path = conan/conan_ogg_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC02801544400CC395D /* conan_opusfile_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opusfile_debug_x86_64.xcconfig; path = conan/conan_opusfile_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC12801544400CC395D /* conan_opusfile_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opusfile_vars_debug_x86_64.xcconfig; path = conan/conan_opusfile_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC22801544400CC395D /* conan_sdl_mixer_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_mixer_vars_debug_x86_64.xcconfig; path = conan/conan_sdl_mixer_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC32801544400CC395D /* conan_tinkerforge_bindings_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_tinkerforge_bindings_debug_x86_64.xcconfig; path = conan/conan_tinkerforge_bindings_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC42801544400CC395D /* conan_tinkerforge_bindings_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_tinkerforge_bindings_vars_release_x86_64.xcconfig; path = conan/conan_tinkerforge_bindings_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC52801544400CC395D /* conan_vorbis_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_vorbis_vars_debug_x86_64.xcconfig; path = conan/conan_vorbis_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC62801544400CC395D /* conan_vorbis_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_vorbis_release_x86_64.xcconfig; path = conan/conan_vorbis_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAC72801544400CC395D /* conan_flac.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_flac.xcconfig; path = conan/conan_flac.xcconfig; sourceTree = "<group>"; };
+		4105BAC82801544400CC395D /* conan_tinkerforge_bindings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_tinkerforge_bindings.xcconfig; path = conan/conan_tinkerforge_bindings.xcconfig; sourceTree = "<group>"; };
+		4105BAC92801544500CC395D /* conan_cli11_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_cli11_debug_x86_64.xcconfig; path = conan/conan_cli11_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BACA2801544500CC395D /* conan_fmt_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_fmt_release_x86_64.xcconfig; path = conan/conan_fmt_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BACB2801544500CC395D /* conan_libmikmod_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmikmod_release_x86_64.xcconfig; path = conan/conan_libmikmod_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BACC2801544500CC395D /* conan_opusfile_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opusfile_vars_release_x86_64.xcconfig; path = conan/conan_opusfile_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BACD2801544500CC395D /* conan_libmikmod_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmikmod_debug_x86_64.xcconfig; path = conan/conan_libmikmod_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BACE2801544500CC395D /* conan_cli11_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_cli11_vars_debug_x86_64.xcconfig; path = conan/conan_cli11_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BACF2801544500CC395D /* conan_sdl_mixer_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_sdl_mixer_release_x86_64.xcconfig; path = conan/conan_sdl_mixer_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAD02801544500CC395D /* conan_ogg_vars_debug_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_ogg_vars_debug_x86_64.xcconfig; path = conan/conan_ogg_vars_debug_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAD12801544500CC395D /* conan_opusfile_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_opusfile_release_x86_64.xcconfig; path = conan/conan_opusfile_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAD22801544500CC395D /* conan_libmad_vars_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_libmad_vars_release_x86_64.xcconfig; path = conan/conan_libmad_vars_release_x86_64.xcconfig; sourceTree = "<group>"; };
+		4105BAD32801544500CC395D /* conan_fmt.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_fmt.xcconfig; path = conan/conan_fmt.xcconfig; sourceTree = "<group>"; };
+		41646EB12800A39D00E68FBD /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 		416ED60A27EDA62A00664526 /* GameExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		416ED60D27EDA62A00664526 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		416ED61F27EDA83F00664526 /* conan_zstd_release_x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = conan_zstd_release_x86_64.xcconfig; path = conan/conan_zstd_release_x86_64.xcconfig; sourceTree = "<group>"; };
@@ -145,6 +218,76 @@
 		416ED61427EDA73100664526 /* conan */ = {
 			isa = PBXGroup;
 			children = (
+				4105BAC92801544500CC395D /* conan_cli11_debug_x86_64.xcconfig */,
+				4105BAAF2801544400CC395D /* conan_cli11_release_x86_64.xcconfig */,
+				4105BACE2801544500CC395D /* conan_cli11_vars_debug_x86_64.xcconfig */,
+				4105BAB32801544400CC395D /* conan_cli11_vars_release_x86_64.xcconfig */,
+				4105BA902801544300CC395D /* conan_cli11.xcconfig */,
+				4105BA932801544300CC395D /* conan_flac_debug_x86_64.xcconfig */,
+				4105BAA62801544300CC395D /* conan_flac_release_x86_64.xcconfig */,
+				4105BA972801544300CC395D /* conan_flac_vars_debug_x86_64.xcconfig */,
+				4105BAB62801544400CC395D /* conan_flac_vars_release_x86_64.xcconfig */,
+				4105BAC72801544400CC395D /* conan_flac.xcconfig */,
+				4105BA8F2801544300CC395D /* conan_fmt_debug_x86_64.xcconfig */,
+				4105BACA2801544500CC395D /* conan_fmt_release_x86_64.xcconfig */,
+				4105BAA02801544300CC395D /* conan_fmt_vars_debug_x86_64.xcconfig */,
+				4105BA982801544300CC395D /* conan_fmt_vars_release_x86_64.xcconfig */,
+				4105BAD32801544500CC395D /* conan_fmt.xcconfig */,
+				4105BAA22801544300CC395D /* conan_libmad_debug_x86_64.xcconfig */,
+				4105BAB92801544400CC395D /* conan_libmad_release_x86_64.xcconfig */,
+				4105BAB52801544400CC395D /* conan_libmad_vars_debug_x86_64.xcconfig */,
+				4105BAD22801544500CC395D /* conan_libmad_vars_release_x86_64.xcconfig */,
+				4105BAAA2801544400CC395D /* conan_libmad.xcconfig */,
+				4105BACD2801544500CC395D /* conan_libmikmod_debug_x86_64.xcconfig */,
+				4105BACB2801544500CC395D /* conan_libmikmod_release_x86_64.xcconfig */,
+				4105BA952801544300CC395D /* conan_libmikmod_vars_debug_x86_64.xcconfig */,
+				4105BABB2801544400CC395D /* conan_libmikmod_vars_release_x86_64.xcconfig */,
+				4105BAB12801544400CC395D /* conan_libmikmod.xcconfig */,
+				4105BAB42801544400CC395D /* conan_libmodplug_debug_x86_64.xcconfig */,
+				4105BABE2801544400CC395D /* conan_libmodplug_release_x86_64.xcconfig */,
+				4105BAB72801544400CC395D /* conan_libmodplug_vars_debug_x86_64.xcconfig */,
+				4105BABA2801544400CC395D /* conan_libmodplug_vars_release_x86_64.xcconfig */,
+				4105BA9B2801544300CC395D /* conan_libmodplug.xcconfig */,
+				4105BAB82801544400CC395D /* conan_mpg123_debug_x86_64.xcconfig */,
+				4105BAA32801544300CC395D /* conan_mpg123_release_x86_64.xcconfig */,
+				4105BAA92801544300CC395D /* conan_mpg123_vars_debug_x86_64.xcconfig */,
+				4105BAA12801544300CC395D /* conan_mpg123_vars_release_x86_64.xcconfig */,
+				4105BAAC2801544400CC395D /* conan_mpg123.xcconfig */,
+				4105BABF2801544400CC395D /* conan_ogg_debug_x86_64.xcconfig */,
+				4105BA912801544300CC395D /* conan_ogg_release_x86_64.xcconfig */,
+				4105BAD02801544500CC395D /* conan_ogg_vars_debug_x86_64.xcconfig */,
+				4105BAAE2801544400CC395D /* conan_ogg_vars_release_x86_64.xcconfig */,
+				4105BABC2801544400CC395D /* conan_ogg.xcconfig */,
+				4105BABD2801544400CC395D /* conan_openssl_debug_x86_64.xcconfig */,
+				4105BA9A2801544300CC395D /* conan_openssl_release_x86_64.xcconfig */,
+				4105BAAB2801544400CC395D /* conan_openssl_vars_debug_x86_64.xcconfig */,
+				4105BA962801544300CC395D /* conan_openssl_vars_release_x86_64.xcconfig */,
+				4105BA992801544300CC395D /* conan_openssl.xcconfig */,
+				4105BA9E2801544300CC395D /* conan_opus_debug_x86_64.xcconfig */,
+				4105BAB02801544400CC395D /* conan_opus_release_x86_64.xcconfig */,
+				4105BAA52801544300CC395D /* conan_opus_vars_debug_x86_64.xcconfig */,
+				4105BA9F2801544300CC395D /* conan_opus_vars_release_x86_64.xcconfig */,
+				4105BAA72801544300CC395D /* conan_opus.xcconfig */,
+				4105BAC02801544400CC395D /* conan_opusfile_debug_x86_64.xcconfig */,
+				4105BAD12801544500CC395D /* conan_opusfile_release_x86_64.xcconfig */,
+				4105BAC12801544400CC395D /* conan_opusfile_vars_debug_x86_64.xcconfig */,
+				4105BACC2801544500CC395D /* conan_opusfile_vars_release_x86_64.xcconfig */,
+				4105BA8E2801544300CC395D /* conan_opusfile.xcconfig */,
+				4105BAA82801544300CC395D /* conan_sdl_mixer_debug_x86_64.xcconfig */,
+				4105BACF2801544500CC395D /* conan_sdl_mixer_release_x86_64.xcconfig */,
+				4105BAC22801544400CC395D /* conan_sdl_mixer_vars_debug_x86_64.xcconfig */,
+				4105BAAD2801544400CC395D /* conan_sdl_mixer_vars_release_x86_64.xcconfig */,
+				4105BA9D2801544300CC395D /* conan_sdl_mixer.xcconfig */,
+				4105BAC32801544400CC395D /* conan_tinkerforge_bindings_debug_x86_64.xcconfig */,
+				4105BA942801544300CC395D /* conan_tinkerforge_bindings_release_x86_64.xcconfig */,
+				4105BAA42801544300CC395D /* conan_tinkerforge_bindings_vars_debug_x86_64.xcconfig */,
+				4105BAC42801544400CC395D /* conan_tinkerforge_bindings_vars_release_x86_64.xcconfig */,
+				4105BAC82801544400CC395D /* conan_tinkerforge_bindings.xcconfig */,
+				4105BA9C2801544300CC395D /* conan_vorbis_debug_x86_64.xcconfig */,
+				4105BAC62801544400CC395D /* conan_vorbis_release_x86_64.xcconfig */,
+				4105BAC52801544400CC395D /* conan_vorbis_vars_debug_x86_64.xcconfig */,
+				4105BA922801544300CC395D /* conan_vorbis_vars_release_x86_64.xcconfig */,
+				4105BAB22801544400CC395D /* conan_vorbis.xcconfig */,
 				416ED64227EDA83F00664526 /* conan_box2d_debug_x86_64.xcconfig */,
 				416ED64127EDA83F00664526 /* conan_box2d_release_x86_64.xcconfig */,
 				416ED65E27EDA84000664526 /* conan_box2d_vars_debug_x86_64.xcconfig */,
@@ -243,6 +386,7 @@
 		41780B6E27FF4139003323BE /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				41646EB12800A39D00E68FBD /* jump.wav */,
 				41780B6A27FF3560003323BE /* frog.png */,
 			);
 			path = assets;
